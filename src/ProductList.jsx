@@ -306,16 +306,13 @@ function ProductList({ onHomeClick }) {
                                 {category.plants.map((plant, index) => (
                                     <div key={index} className="product-card">
                                         <h3 className="product-title">{plant.name}</h3>
-    
                                         <img
                                             src={plant.image}
                                             alt={plant.name}
                                             className="product-image"
                                         />
-    
                                         <p>{plant.description}</p>
                                         <p className="product-price">{plant.cost}</p>
-    
                                         <button
                                             className={`product-button ${
                                                 addedToCart[plant.name] ? "added-to-cart" : ""
